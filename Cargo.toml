@@ -68,6 +68,7 @@ cargo-generate = "0.22"
 wasm-opt = "0.116.1"
 ignore = "0.4.23"
 walkdir = "2.5"
+openssl = { version = "0.10.71", features = ["vendored"] }
 
 [dev-dependencies]
 insta = { version = "1.42.1", features = ["yaml"] }
