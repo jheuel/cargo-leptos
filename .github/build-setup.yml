@@ -1,0 +1,8 @@
+- name: Install MUSL tools and configure environment
+  if: contains(matrix.target, 'musl')
+  run: |
+    sudo apt-get update
+    sudo apt-get install -y musl-tools musl-dev build-essential pkg-config libssl-dev
+    if ! command -v musl-g++ > /dev/null; then
+      sudo ln -s $(which musl-gcc) /usr/local/bin/musl-g++
+    fi
