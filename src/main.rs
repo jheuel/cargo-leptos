@@ -17,5 +17,6 @@ async fn main() -> color_eyre::Result<()> {
     cargo_leptos::logger::setup(verbose, &args.log);
     color_eyre::install()?;
 
+
     run(args).await
 }
