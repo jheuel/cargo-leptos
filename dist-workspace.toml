@@ -25,3 +25,10 @@ install-path = "CARGO_HOME"
 install-updater = false
 # Add custom build setup steps
 github-build-setup = "../build-setup.yml"
+
+[dist.dependencies.apt]
+binaryen = { targets = ["x86_64-unknown-linux-musl"] }
+"g++" = { targets = ["x86_64-unknown-linux-musl"] }
+gcc = { targets = ["x86_64-unknown-linux-musl"] }
+perl = { targets = ["x86_64-unknown-linux-musl"] }
+make = { targets = ["x86_64-unknown-linux-musl"] }
