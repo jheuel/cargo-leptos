@@ -32,5 +32,8 @@ binaryen = { targets = ["x86_64-unknown-linux-musl"] }
 gcc = { targets = ["x86_64-unknown-linux-musl"] }
 perl = { targets = ["x86_64-unknown-linux-musl"] }
 make = { targets = ["x86_64-unknown-linux-musl"] }
-linux-musl-dev = { targets = ["x86_64-unknown-linux-musl"] }
 build-essential = { targets = ["x86_64-unknown-linux-musl"] }
+clang = { targets = ["x86_64-unknown-linux-musl"] }
+musl = { targets = ["x86_64-unknown-linux-musl"] }
+musl-dev = { targets = ["x86_64-unknown-linux-musl"] }
+musl-tools = { targets = ["x86_64-unknown-linux-musl"] }
